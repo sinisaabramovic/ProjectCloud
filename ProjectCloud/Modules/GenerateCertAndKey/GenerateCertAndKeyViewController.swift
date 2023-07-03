@@ -23,20 +23,22 @@ struct GenerateCertAndKeyViewController: View {
     
     var body: some View {
         GeometryReader { geometry in
-            VStack(alignment: .leading) {
+            VStack(
+                alignment: .leading,
+                spacing: 0
+            ) {
                 
                 if isCertGenerated {
                     CertAndKeyView(presenter: presenter)
                 }
                 
-                Spacer()
+                Spacer(minLength: 0)
                 
                 GenerateCertAndKeyView(
                     isCertGenerated: $isCertGenerated,
                     presenter: presenter
                 )
-                
-                Spacer()
+                .padding(.bottom, 54)
             }
             .frame(
                 width: geometry.size.width,
