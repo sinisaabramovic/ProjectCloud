@@ -150,6 +150,13 @@
 			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
+		ED68FB0B2A53644200C15DBC /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
 		EDBA9B772A50624E0057FE06 = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +285,7 @@
 		EDBA9BCB2A5075DA0057FE06 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ED68FB0B2A53644200C15DBC /* Defines */,
 				EDD1E5432A5185D3001D14AE /* Utils */,
 				EDBA9BCC2A5075E70057FE06 /* Navigation */,
 			);
