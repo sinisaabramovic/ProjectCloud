@@ -42,9 +42,7 @@ extension GenerateCertAndKeyPresenter {
         guard
             let certData = try? CertGeneratorUtils.generateCertificateAndKey()
         else {
-            #warning("TODO - WIP custom error handler")
-            print("NOT OK!")
-            return
+            fatalError("Error handler not implemented")
         }
         
         let base64Strings = CertGeneratorUtils.certAndKeyInBase64EncodedStrings(from: certData)
