@@ -32,8 +32,11 @@ final class GenerateCertAndKeyPresenter: ObservableObject {
         self.interactor = interactor
         self.coordinator = coordinator
     }
-    
-    // MARK: - Public methods -
+}
+
+// MARK: - Extensions -
+
+extension GenerateCertAndKeyPresenter {
     
     func generateBaseCert() {
         guard
@@ -48,4 +51,5 @@ final class GenerateCertAndKeyPresenter: ObservableObject {
         certificate = base64Strings.certificate
         privateKey = base64Strings.privateKey
     }
+    
 }

@@ -27,8 +27,11 @@ final class HomePresenter: ObservableObject {
         self.interactor = interactor
         self.coordinator = coordinator
     }
-    
-    // MARK: - Public methods -
+}
+
+// MARK: - Extensions -
+
+extension HomePresenter {
     
     func showHelloMessage() {
         coordinator.show(.hello)
@@ -37,4 +40,5 @@ final class HomePresenter: ObservableObject {
     func showCertGenerator() {
         coordinator.show(.cert)
     }
+    
 }

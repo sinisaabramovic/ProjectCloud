@@ -36,10 +36,14 @@ final class HelloMessagePresenter: ObservableObject {
             .assign(to: \.message, on: self)
             .store(in: &cancellables)
     }
-    
-    // MARK: - Public methods -
+}
+
+// MARK: - Extensions -
+
+extension HelloMessagePresenter {
     
     func handleShowHelloMessageButtonPressed() {
         interactor.getHelloMessage()
     }
+    
 }
