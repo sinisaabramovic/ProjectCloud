@@ -42,6 +42,7 @@ extension GenerateCertAndKeyPresenter {
         guard
             let certData = try? CertGeneratorUtils.generateCertificateAndKey()
         else {
+            #warning("TODO - WIP custom error handler")
             print("NOT OK!")
             return
         }
