@@ -31,20 +31,10 @@ struct GenerateCertAndKeyViewController: View {
                 
                 Spacer()
                 
-                Section {
-                    HStack {
-                        Spacer()
-                        ActionViewButton(
-                            title: "Generate Cert & Key",
-                            action: {
-                                presenter.generateBaseCert()
-                                isCertGenerated = true
-                            }
-                        )
-                        .buttonStyle(AlertButtonStyle())
-                        Spacer()
-                    }
-                }.padding(.horizontal, 34)
+                GenerateCertAndKeyView(
+                    isCertGenerated: $isCertGenerated,
+                    presenter: presenter
+                )
                 
                 Spacer()
             }
