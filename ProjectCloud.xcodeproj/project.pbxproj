@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ED00A4A82A517EAB00EEF3BD /* X509 in Frameworks */ = {isa = PBXBuildFile; productRef = ED00A4A72A517EAB00EEF3BD /* X509 */; };
+		ED68FB052A535E9100C15DBC /* CertAndKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED68FB042A535E9100C15DBC /* CertAndKeyView.swift */; };
 		EDACBA7A2A534EB20051CA51 /* AlertButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDACBA792A534EB20051CA51 /* AlertButtonStyle.swift */; };
 		EDBA9B882A50624F0057FE06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBA9B872A50624F0057FE06 /* Assets.xcassets */; };
 		EDBA9B8B2A50624F0057FE06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBA9B8A2A50624F0057FE06 /* Preview Assets.xcassets */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED68FB042A535E9100C15DBC /* CertAndKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertAndKeyView.swift; sourceTree = "<group>"; };
 		EDACBA792A534EB20051CA51 /* AlertButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButtonStyle.swift; sourceTree = "<group>"; };
 		EDBA9B802A50624E0057FE06 /* ProjectCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBA9B872A50624F0057FE06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,12 +120,21 @@
 		ED00A4A52A517E2300EEF3BD /* GenerateCertAndKey */ = {
 			isa = PBXGroup;
 			children = (
+				ED68FB032A535E8600C15DBC /* Subviews */,
 				EDD1E5342A517F69001D14AE /* GenerateCertAndKeyRouter.swift */,
 				EDD1E5362A517F78001D14AE /* GenerateCertAndKeyInteractor.swift */,
 				EDD1E5382A517F85001D14AE /* GenerateCertAndKeyPresenter.swift */,
 				EDD1E53A2A517F93001D14AE /* GenerateCertAndKeyViewController.swift */,
 			);
 			path = GenerateCertAndKey;
+			sourceTree = "<group>";
+		};
+		ED68FB032A535E8600C15DBC /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				ED68FB042A535E9100C15DBC /* CertAndKeyView.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		EDBA9B772A50624E0057FE06 = {
@@ -468,6 +479,7 @@
 				EDD1E5352A517F69001D14AE /* GenerateCertAndKeyRouter.swift in Sources */,
 				EDD1E53B2A517F93001D14AE /* GenerateCertAndKeyViewController.swift in Sources */,
 				EDBA9BBC2A5065DB0057FE06 /* HelloMessagePresenter.swift in Sources */,
+				ED68FB052A535E9100C15DBC /* CertAndKeyView.swift in Sources */,
 				EDBA9B8D2A50624F0057FE06 /* Persistence.swift in Sources */,
 				EDD1E5392A517F85001D14AE /* GenerateCertAndKeyPresenter.swift in Sources */,
 				EDBA9BC52A5066F30057FE06 /* HelloMessageRouter.swift in Sources */,

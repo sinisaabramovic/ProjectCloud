@@ -15,19 +15,36 @@ struct GenerateCertAndKeyViewController: View {
     
     @ObservedObject var presenter: GenerateCertAndKeyPresenter
     
+    // MARK: - Private properties -
+    
+    @State private var isCertGenerated = false
+    
     // MARK: - Content -
     
     var body: some View {
         GeometryReader { geometry in
-            VStack {
+            VStack(alignment: .leading) {
+                
+                if isCertGenerated {
+                    CertAndKeyView(presenter: presenter)
+                }
+                
                 Spacer()
                 
-                ActionViewButton(
-                    title: "Generate Cert & Key",
-                    action: presenter.generateBaseCert
-                )
-                .buttonStyle(AlertButtonStyle())
-                .padding(.bottom, 10)
+                Section {
+                    HStack {
+                        Spacer()
+                        ActionViewButton(
+                            title: "Generate Cert & Key",
+                            action: {
+                                presenter.generateBaseCert()
+                                isCertGenerated = true
+                            }
+                        )
+                        .buttonStyle(AlertButtonStyle())
+                        Spacer()
+                    }
+                }.padding(.horizontal, 34)
                 
                 Spacer()
             }

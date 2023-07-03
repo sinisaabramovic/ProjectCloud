@@ -11,6 +11,11 @@ import Combine
 
 final class GenerateCertAndKeyPresenter: ObservableObject {
     
+    // MARK: - Public properties -
+    
+    @Published var certificate: String = ""
+    @Published var privateKey: String = ""
+    
     // MARK: - Private properties -
     
     private let coordinator: Coordinator<GenerateCertAndKeyRouter>
@@ -40,8 +45,7 @@ final class GenerateCertAndKeyPresenter: ObservableObject {
         
         let base64Strings = CertGeneratorUtils.certAndKeyInBase64EncodedStrings(from: certData)
         
-        print(base64Strings.certificate)
-        print("-----------------------------------------------------------------")
-        print(base64Strings.privateKey)
+        certificate = base64Strings.certificate
+        privateKey = base64Strings.privateKey
     }
 }
