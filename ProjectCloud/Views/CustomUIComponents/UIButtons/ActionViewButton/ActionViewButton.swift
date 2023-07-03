@@ -25,7 +25,7 @@ struct ActionViewButton: View {
         self.action = action
     }
     
-    // MARK: - Content -
+    // MARK: - View Content -
     
     var body: some View {
         Button(action: action) {

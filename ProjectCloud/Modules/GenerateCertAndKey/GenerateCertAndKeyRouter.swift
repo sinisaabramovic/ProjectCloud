@@ -27,7 +27,7 @@ public enum GenerateCertAndKeyRouter: NavigationRouter {
         }
     }
     
-    // MARK: - Content -
+    // MARK: - View Content -
     
     public func view(coordinator: Coordinator<GenerateCertAndKeyRouter>) -> AnyView {
         switch self {

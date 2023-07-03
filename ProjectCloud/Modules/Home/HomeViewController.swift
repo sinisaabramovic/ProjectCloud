@@ -15,7 +15,7 @@ struct HomeViewController: View {
     
     @ObservedObject var presenter: HomePresenter
     
-    // MARK: - Content -
+    // MARK: - View Content -
     
     var body: some View {
         GeometryReader { geometry in

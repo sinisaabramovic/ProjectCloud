@@ -25,7 +25,7 @@ public enum HelloMessageRouter: NavigationRouter {
         }
     }
     
-    // MARK: - Content -
+    // MARK: - View Content -
     
     public func view(coordinator: Coordinator<HelloMessageRouter>) -> AnyView {
         switch self {

@@ -19,7 +19,7 @@ struct GenerateCertAndKeyViewController: View {
     
     @State private var isCertGenerated = false
     
-    // MARK: - Content -
+    // MARK: - View Content -
     
     var body: some View {
         GeometryReader { geometry in

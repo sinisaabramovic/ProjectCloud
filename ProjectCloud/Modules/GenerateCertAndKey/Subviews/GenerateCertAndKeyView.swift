@@ -16,8 +16,8 @@ struct GenerateCertAndKeyView: View {
     @Binding var isCertGenerated: Bool
     let presenter: GenerateCertAndKeyPresenter
     
-    // MARK: - Content -
-
+    // MARK: - View Content -
+    
     var body: some View {
         Section {
             HStack {

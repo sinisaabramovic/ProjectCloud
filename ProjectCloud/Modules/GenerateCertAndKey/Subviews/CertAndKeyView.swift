@@ -15,7 +15,7 @@ struct CertAndKeyView: View {
     
     @ObservedObject var presenter: GenerateCertAndKeyPresenter
     
-    // MARK: - Content -
+    // MARK: - View Content -
     
     var body: some View {
         VStack(alignment: .leading) {

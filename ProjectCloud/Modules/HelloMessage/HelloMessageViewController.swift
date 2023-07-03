@@ -15,7 +15,7 @@ struct HelloMessageViewController: View {
     
     @ObservedObject var presenter: HelloMessagePresenter
     
-    // MARK: - Content -
+    // MARK: - View Content -
     
     var body: some View {
         GeometryReader { geometry in

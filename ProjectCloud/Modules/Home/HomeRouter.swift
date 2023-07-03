@@ -32,7 +32,7 @@ public enum HomeRouter: NavigationRouter {
         }
     }
     
-    // MARK: - Content -
+    // MARK: - View Content -
     
     public func view(coordinator: Coordinator<HomeRouter>) -> AnyView {
         switch self {
