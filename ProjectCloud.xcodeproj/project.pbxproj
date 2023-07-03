@@ -10,6 +10,7 @@
 		ED00A4A82A517EAB00EEF3BD /* X509 in Frameworks */ = {isa = PBXBuildFile; productRef = ED00A4A72A517EAB00EEF3BD /* X509 */; };
 		ED68FB052A535E9100C15DBC /* CertAndKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED68FB042A535E9100C15DBC /* CertAndKeyView.swift */; };
 		ED68FB072A535FD700C15DBC /* GenerateCertAndKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED68FB062A535FD700C15DBC /* GenerateCertAndKeyView.swift */; };
+		ED68FB0A2A53624B00C15DBC /* CertInfoViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED68FB092A53624B00C15DBC /* CertInfoViewModifier.swift */; };
 		EDACBA7A2A534EB20051CA51 /* AlertButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDACBA792A534EB20051CA51 /* AlertButtonStyle.swift */; };
 		EDBA9B882A50624F0057FE06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBA9B872A50624F0057FE06 /* Assets.xcassets */; };
 		EDBA9B8B2A50624F0057FE06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBA9B8A2A50624F0057FE06 /* Preview Assets.xcassets */; };
@@ -60,6 +61,7 @@
 /* Begin PBXFileReference section */
 		ED68FB042A535E9100C15DBC /* CertAndKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertAndKeyView.swift; sourceTree = "<group>"; };
 		ED68FB062A535FD700C15DBC /* GenerateCertAndKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateCertAndKeyView.swift; sourceTree = "<group>"; };
+		ED68FB092A53624B00C15DBC /* CertInfoViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertInfoViewModifier.swift; sourceTree = "<group>"; };
 		EDACBA792A534EB20051CA51 /* AlertButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButtonStyle.swift; sourceTree = "<group>"; };
 		EDBA9B802A50624E0057FE06 /* ProjectCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBA9B872A50624F0057FE06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +140,14 @@
 				ED68FB062A535FD700C15DBC /* GenerateCertAndKeyView.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		ED68FB082A53623500C15DBC /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				ED68FB092A53624B00C15DBC /* CertInfoViewModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 		EDBA9B772A50624E0057FE06 = {
@@ -250,6 +260,7 @@
 		EDBA9BBD2A5066230057FE06 /* CustomUIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				ED68FB082A53623500C15DBC /* ViewModifiers */,
 				EDD1E53C2A5181DE001D14AE /* UIStyles */,
 				EDBA9BBE2A50663E0057FE06 /* UIButtons */,
 			);
@@ -495,6 +506,7 @@
 				EDBA9B902A50624F0057FE06 /* ProjectCloud.xcdatamodeld in Sources */,
 				EDBA9BE32A50BD6E0057FE06 /* HomeInteractor.swift in Sources */,
 				ED68FB072A535FD700C15DBC /* GenerateCertAndKeyView.swift in Sources */,
+				ED68FB0A2A53624B00C15DBC /* CertInfoViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,11 +25,7 @@ struct CertAndKeyView: View {
                     .padding(.top, 20)
                 
                 Text(presenter.certificate)
-                    .font(.system(size: 12))
-                    .padding(10)
-                    .background(Color.blue.opacity(0.1))
-                    .border(Color.blue, width: 1)
-                    .cornerRadius(5)
+                    .modifier(CertInfoViewModifier())
             }.padding(.horizontal, 34)
             
             Section {
@@ -38,11 +34,7 @@ struct CertAndKeyView: View {
                     .padding(.top, 20)
                 
                 Text(presenter.privateKey)
-                    .font(.system(size: 12))
-                    .padding(10)
-                    .background(Color.blue.opacity(0.1))
-                    .border(Color.blue, width: 1)
-                    .cornerRadius(5)
+                    .modifier(CertInfoViewModifier())
             }.padding(.horizontal, 34)
         }
     }
